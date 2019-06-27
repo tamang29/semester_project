@@ -1,0 +1,348 @@
+<html>
+
+    <head>
+
+        <title></title>
+
+        <link rel="stylesheet" style="text/css" href="project.css">
+
+    </head>
+
+    <script type="text/javascript">
+
+       /*document.getElementsByClassName('contact');
+
+       onclick = function (){
+
+           location.href = "www.signup.com";
+
+       }
+       */
+
+       var index=0;
+
+		var timeout;
+
+		function pre(){
+
+			index--;
+
+			if(index<0){
+
+				var sliders=document.getElementsByClassName('slider');
+
+				index=sliders.length-1;
+
+			}
+
+			display();
+
+		}
+	function next(){
+
+			index++;
+
+			var sliders=document.getElementsByClassName('slider');
+
+			if(index>=sliders.length){
+
+				index=0;
+
+			}
+
+			display();
+
+		}
+
+		function display(){
+
+			var sliders=document.getElementsByClassName('slider');
+
+			for(var i=0;i<sliders.length;i++){
+
+				sliders[i].style.display='none';
+
+			}
+
+				sliders[index].style.display='block';
+
+			clearTimeout(timeout);
+
+			timeout=setTimeout(next,3000);
+
+        }
+    </script>
+
+<body onload="display();">
+
+            <div class="header">
+
+        
+
+                    <a href="signup.html">sign up |</a>
+
+                    <a href="login.html">login |</a>
+
+                    <a href="feedback.html">RSS feeds |</a>
+
+                    <a href="archived.html">Archived News</a>
+
+                    <a href="gmail.html"><img src="gmail.png"></a>
+
+                        <a href="facebook.html"><img src="facebook.png"></a>
+
+                        <a href="twitter.html"><img src="twitter.jpg"></a>
+
+                        <a href="linkin.html"><img src="linkedin.png"></a>
+
+                       
+
+                    
+
+                </div>
+
+                <div class=menu>
+
+                        <ul >
+
+                            <li><a href="body.html" style="padding-left:0px;">Home</a></li>
+
+                            <li><a href="market.html">Market</a></li>
+
+                            <li><a href="gallery.html">Gallery</a></li>
+
+                            <li id="drop">
+
+                                <a href="">Trending</a>
+
+                            <div class="submenu">
+
+                                
+
+                                    <a href="news.html">News</a>
+
+                                    <a href="discussion.html">Discussion</a>
+
+                                
+
+                            </div>
+
+                        </li>
+
+                            <li><a href="esports.html">Esports</a></li>
+
+                        
+
+                    </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <div name="searchbox" class="search">
+
+                        <button name="submit" type="submit" value="submit" style="float:right; margin-right: 10px;margin-left: 10px; cursor: pointer;">Search</button>
+
+                    <input type="text" placeholder="Search our website...">
+
+                    <h2 style="margin-left:25px;">GamingSathi</h2>
+
+                    
+
+                    <small style="margin-left:25px; color: grey;">Connect with your friends and allies.</small>
+
+                    
+
+                </div>
+                <!--login-->
+                    <form method="POST">
+                            <div class="inp" id="login">
+                        <h1><u>Login</u></h1>
+                        <br>
+                        <p style="margin-left:50px;">Username:</p>
+                            <input type="text" style="margin-left:50px;" placeholder="Username">
+                        
+                        <br>
+                        <p style="margin-left:50px;">Password:<br></p>
+                      
+                       <input type="password" id="password" style="margin-left:50px;" placeholder="Password">
+                        <br>
+                        
+                        <p style="margin-left:50px;"><button onclick="check();">login</button></p>
+                        <script type="text/javascript">
+                        function check()
+                        {
+                            var name=document.getElementById('username');
+                            var pass=document.getElementById('password');
+                            if(name.value==""||pass.value=="")
+                            {
+                                alert('All information should be filled.')
+                            }
+                        }
+                        </script>
+                        </div>
+                        </form>
+                    <br>
+
+                    <br>
+                    <!--footer-->
+
+                    <div id="container">
+
+                            <div name="ContactUs" class="contact">
+
+                                    <h3 class="heading">CONTACT US</h3>
+
+                                    <form>
+
+                                    <input type="text" placeholder="Name">
+
+                                    <br>
+
+                                    <br>
+
+                                    <input type="email" placeholder="Email">
+
+                                    <br>
+
+                                    <br>
+
+                                    <input type="text" placeholder="Subject">
+
+                                    <br>
+
+                                    <br>
+
+                                    <textarea placeholder="Message"></textarea>
+
+                                    <br>
+
+                                    <br>
+
+                                    <button name="submit" type="submit" value="submit">SUBMIT</button>
+
+                                    </form>
+
+                            </div>
+
+                            <div name="blogs" class="blog">
+
+                                    <h3 class="heading" style="color: white;">LATEST BLOG POSTS</h3>
+
+                                    <h3>Post Title</h3>
+
+                                    <p>Admin,dominname.com</p> 
+
+                                    <p>Friday,6th April 5000</p>
+
+                                    <p>Nulla facillisi.ut fringilla.suspebdisse</p>
+
+                                    <p align="right"><a href="r1.html" style="color:0099FF;text-decoration: none;">Read more>></a></p>
+
+                                    
+
+                                    <h3>Post Title</h3>
+
+                                    <p>Admin,dominname.com</p> 
+
+                                    <p>Friday,6th April 5000</p>
+
+                                    <p>Nulla facillisi.ut fringilla.suspebdisse</p>
+
+                                    <p align="right"><a href="r1.html" style="color:0099FF;text-decoration: none;">Read more>></a></p>
+
+                            </div>
+
+                            <div name="blogs" class="link">
+
+                
+
+                                    <h3 class="heading">QUICK LINKS</h3>
+
+                                    <ul>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    <hr>
+
+                                    <li><a href="">Loream</a></li>
+
+                                    </ul>
+
+                
+
+                                </div>
+
+                                <div name="blogs" class="about" style="padding-left: 20px;">
+
+                                        <h3 class="heading">ABOUT US</h3>
+
+                                        <img src="name.jpg">
+
+                                        <p>Lorem ipsum dolor sit amet,
+
+                                            consectur adipiscing elit.
+
+                                        </p>
+
+                                        <h5 align="right"><a href="r1.html" style="color:0099FF;text-decoration: none;">Read more>></a></h5>
+
+                
+
+                                    </div>
+
+                        </div>
+
+                        <div name="main_footer" class="footer">
+
+                            
+
+                            <p style="float: right">Templates by OS Templates</p>
+
+                            <p>Copyright@2013 Domain Name All rights Reserved.</p>
+
+                        </div>    
+
+                
+
+                
+
+                
+
+    </body>
+
+</html>
