@@ -7,7 +7,6 @@ body{
     width: 100%;
     float: left; 
     overflow: auto;
-    margin-top: 20px;
 }
 #toplink{
     float: left;
@@ -64,7 +63,7 @@ text-decoration: none;
 }
 
 
-.fa {
+.fab {
     padding: 11px;
     font-size: 13px !important;
     height: 10px;
@@ -77,14 +76,14 @@ text-decoration: none;
   }
   
   /* Add a hover effect if you want */
-  .fa:hover {
+  .fab:hover {
     opacity: 0.7;
   }
   
   /* Set a specific color for each brand */
   
   /* Facebook */
-  .fa-facebook {
+  .fa-facebook-f {
     background:#3B5998;
     color: white;
   }
@@ -94,11 +93,11 @@ text-decoration: none;
     background: #55ACEE;
     color: white;
   }
-  .fa-google {
+  .fa-google-plus-g {
     background: red;
     color: white;
   }
-  .fa-linkedin {
+  .fa-linkedin-in {
     background: #002699;
     color: white;
   }
@@ -143,7 +142,9 @@ text-decoration: none;
 .dropdown-content{
     position: absolute;
     display: none;
-    top:36px;
+    top:33px;
+   
+
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown-content>a{
@@ -153,12 +154,13 @@ text-decoration: none;
     display: block;
     color:white;
     font-size: 15px !important;
+    border-bottom: 5px solid #e6e6e6;
    
 
 }
 .dropdown-content>a:hover{
     background-color: white;
-    color: black !important;
+    
     border-bottom: 5px solid #55ACEE;
     transition:background .5s ease-in-out;
 
@@ -191,7 +193,7 @@ text-decoration: none;
     margin-top: 20px;
      
 }
-input{
+#engine input{
     float: left;
     margin-top: 10px;
     margin-left: 10px;
@@ -261,7 +263,7 @@ span{
  }
  .myimage{
      
-    width: 60%;
+    width: 100%;
     height: 100%;
     float: right;
     overflow: hidden;
@@ -320,7 +322,7 @@ span{
 }
 
 .slide:nth-of-type(1) {
-    background:blue;
+    background:red;
 }
 .slide:nth-of-type(2) {
     background: orange;
@@ -342,10 +344,11 @@ span{
 .review_container{
     float: left;
     margin:20px 1.5%;
+    margin-top: unset;
     width: 97%;
     height: 85%;
     
-    box-shadow: 8px 8px 16px 16px rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 16px 10px rgba(0,0,0,0.2);
     
 }
 #monitor{
@@ -392,7 +395,20 @@ span{
     right: 0;
     border-radius: 3px 0 0 3px;
   }
-  
+  hr{opacity: .3;margin-top:3px;padding:0;}
+  .clip{
+      float: left;
+      padding: 10px 17px;
+      width: 100px;
+      background: black;
+      color: 
+      white;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 1.5%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+  }
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: white;
@@ -450,13 +466,13 @@ span{
       font-size: 25px;
       background: #d9d9d9;
       
+      
   }
-  #signhere button{
-    float:right;position:absolute;left:70%;top:20px;
-    height: 50px;
-    width: 300px;
-    font-size: 35px;
-    font-variant: small-caps;
+  #signhere a{
+    float:right;position:absolute;left:75%;top:20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    
     cursor: pointer;
     outline: none;
     background: rgb(119, 194, 252);
@@ -465,7 +481,7 @@ span{
     color: white;
     transition: background .5s ease-in-out;
   }
-  #signhere button:hover{
+  #signhere a:hover{
       background: rgb(54, 54, 167);
       transition: all .5s ;
       
@@ -476,28 +492,28 @@ span{
     height: 400px;
     width: 100%;
     
-    background-color: #1a1a1a; 
+    background-color: #262626; 
 }
 .contact{
     height: 350px;
-    width: 300px;
+    width: 22%;
     
-    float: right;
+    float: left;
     margin-top:25px;
 }
 .blog{
     height: 350px;
-    width: 300px;
-    
-    float: right;
+    width: 25%;
+    margin-right: 1%;
+    float: left;
     margin-top:25px;
-    margin-right: 25px;
+    
     font-size: 14px;
 }
 .about{
     height: 350px;
-    width: 250px;
-    
+    width: 20%;
+    margin-right: 1%;
     float: left;
     margin-top:25px;
 
@@ -506,23 +522,23 @@ span{
     height:90px;
     width:215px;
 }
-div .link li{
+
+/* div .link li{
 
     font-size: 11px;
-}
+} */
 div .link li a{
 
-    font-size: 11px;
+    font-size: 13px;
     color: #0099FF;
     text-decoration: none;
 }
 .link{
     height: 350px;
-    width: 400px;
-    
-    float: right;
+    width: 27%;
+    margin-right:3%;
+    float: left;
     margin-top:25px;
-    margin-right: 25px;
 }
 .contact input,.contact textarea{
     float: left;
@@ -532,6 +548,7 @@ div .link li a{
     border-radius: 6px;
     padding: 8px;
     width: 250px;
+    margin-bottom: 7px;
 }
 /* textarea{
     float: left;
@@ -565,11 +582,114 @@ div .blog h3,p{
     
     background-color: #222222;
 }
+.heading{
+    padding-left: 8px;
+}
 
+.myimg{width:60%;
+    
+float: left;}
+.caption{color:pink;float: left;width:40%;background:black;height: 100%;}
 
-
+/*esports css*/
+.esports{
+    float: left;
+    height: auto;
+    width: 100%;
+    background: #1a1a1a;
+}
+.overall_news{
+    float: left;
+    height: auto;
+    width: 85%;
+    margin: 3% 7%;
+    
+}
+  #navigation{
+      float: left;
+      width: 100%;
+      height: 8%;
+      
+  }
+  #title{
+      float: left;
+      width: 60%;
+      height: 100%;
+      
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+  }
+  #sort{
+      float: left;
+      width: 40%;
+      height: 100%;
+     
+  }
+  #sort input,#sort select{
+      width: 40%;
+      height: 80%;
+      background:#1a1a1a;
+      border:2px solid white;
+      color: white;
+      padding-left: 5px;
+      font-size: 15px;
+      outline-color: #00cc44;
+  }
   
-  
+  #sort button{
+    width: 10%;
+    height: 80%;
+    background:#1a1a1a;
+    border:2px solid white;
+    color: white;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .article{
+      float: left;
+      height: 60%;
+      width: 30%;
+      
+      margin: 2% 1.5%;
+  }
+  .article img{
+      float: left;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      z-index:1;
+      opacity: .6;
+      transition: opacity .5s ease-in;
+  }
+  .article img:hover{
+      opacity: unset;
+      transition: opacity .5s ease-in-out;
+  }
+  .article p{
+      position: absolute;
+      margin-top: 22%;
+      margin-left: 2%;
+      z-index: 2;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      
+      display: block;
+      width: 22%;
+      height: auto;
+     
+  }
+
+  #show{
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid white;
+      margin-left: 45%;
+  }
 
 
-  
+fas fa-search{
+      color: white;
+  }
